@@ -1,5 +1,4 @@
-1. Load users from backend
-2. Send users to backend & update list from the server
+0. store salted password in a separate credentials table
 3. Add client-side validation (required fields, email, passwords matching)
 4. Add server-side validation (required fields, email, send only one password, username & email uniqueness)
 5. Ajax partial validation
