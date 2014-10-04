@@ -2,7 +2,6 @@ package edu.labs.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author: Sergey Royz
@@ -12,9 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloWorldController {
 
     @RequestMapping("/")
-    @ResponseBody
     public String helloWorld() {
-        return "Hello world";
+        return "redirect:hello";
     }
 
 }
