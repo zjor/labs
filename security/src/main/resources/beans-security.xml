@@ -15,13 +15,6 @@
     </http>
 
     <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="juan" password="p@ssword"
-                      authorities="user,admin"/>
-                <user name="elvira" password="p@ssword"
-                      authorities="user"/>
-            </user-service>
-        </authentication-provider>
+        <authentication-provider user-service-ref="acmeUserDetailsService"/>
     </authentication-manager>
 </beans:beans>

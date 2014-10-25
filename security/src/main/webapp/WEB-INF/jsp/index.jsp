@@ -27,7 +27,7 @@
 	<a href="${loginUrl}">Log in</a>
 </security:authorize>
 <security:authorize access="isAuthenticated()">
-	Hi, <security:authentication property="principal.username"/>.
+	Hi, <security:authentication property="principal.fullName"/>.
 	<a href="${logoutUrl}">Log out</a>
 </security:authorize>
 
