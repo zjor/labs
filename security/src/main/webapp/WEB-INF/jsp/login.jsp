@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:url var="postLoginUrl" value="/j_spring_security_check"/>
 <html>
-<head><title>Please log in</title></head>
+<head><title>AcmeSecurity - Please log in</title></head>
 <body>
 <c:if test="${param.failed == true}">
 	<div>Your login attempt failed. Please try again.</div>

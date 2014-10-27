@@ -8,7 +8,7 @@
 <c:url var="logoutUrl" value="/j_spring_security_logout"/>
 <html>
 <head>
-	<title></title>
+	<title>AcmeSecurity</title>
 </head>
 <body>
 
