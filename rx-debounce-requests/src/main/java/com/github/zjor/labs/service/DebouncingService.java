@@ -18,8 +18,6 @@ public class DebouncingService {
     private Subject<Event, Event> events = PublishSubject.create();
 
     {
-        events.groupBy(e -> e.getClass()).flatMap(g1 -> g1.groupBy(e -> e.getId()).flatMap(g2 -> g2.toList()));
-
         events.groupBy(e -> e.getClass()).subscribe(typedStream -> {
             Class<? extends Event> clazz = typedStream.getKey();
             requests.putIfAbsent(clazz, new ConcurrentHashMap<>());
